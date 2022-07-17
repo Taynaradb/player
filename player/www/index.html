@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="fa-solid fa-angle-down"></i>
+          <span>Now Playing</span>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="img-area">
+            <img src="music/asitwas.jpg" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+          <div class="progress-bar">
+            <audio id="main-audio" src=""></audio>
+          </div>
+          <div class="song-timer">
+            <span class="current-time">0:00</span>
+            <span class="max-duration">0:00</span>
+          </div>
+        </div>
+        <div class="controls">
+          <i id="repeat-plist" class="fa-solid fa-repeat"></i>
+          <i id="prev" class="fa-solid fa-backward"></i>
+          <div class="play-pause">
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <i id="next" class="fa-solid fa-forward"></i>
+          <i id="like" class="fa-regular fa-heart"></i>
+        </div> 
+        <div class="music-list">
+          <div class="header">
+            <div class="row">
+                <span>Favorites</span>
+                <i class= "fa-solid fa-heart"></i>
+            </div>
+            <i id="close" class="fa-solid fa-circle-xmark"></i>
+          </div>
+          <ul>
+            <!-- here li list are coming from js -->
+          </ul>
+        </div>
+      </div>
+        <script src="js/music-list.js"></script>
+        <script src="js/js.js"></script>
+        <script src="jquery/dist/jquery.min.js"></script>
+
+</body>
+
+</html>
