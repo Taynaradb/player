@@ -16,7 +16,7 @@ let music = [
     {
         name: "Adore You",
         artist: "Harry Styles",
-        img: "asitwas.jpg",
+        img: "adoreyou.png",
         src: "Adore_You.mp4",
         fav: false
     }

@@ -62,7 +62,7 @@ function nextMusic(){
 
 function prevMusic(){
     musicIndex--;
-    musicIndex < music.length ? musicIndex = music.length : musicIndex = musicIndex;
+    musicIndex < 1 ? musicIndex = music.length : musicIndex = musicIndex;
     loadMusic(musicIndex);
     playMusic();
 }
